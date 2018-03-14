@@ -41,10 +41,9 @@ $(function () {
             });
         });
         it('are correctly loaded', function (done) {
-            var container = $('.feed');
-            var containerChildren = container.children();
-            expect(containerChildren).toBeDefined();
-            expect(containerChildren.length).toBeGreaterThan(0);
+            var entries= $('.feed .entry'); 
+            expect(entries).toBeDefined();
+            expect(entries.length).toBeGreaterThan(1);
             done();
         });
     });
