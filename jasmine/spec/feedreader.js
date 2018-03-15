@@ -15,7 +15,7 @@ $(function () {
         it('name are not empty', function () {
             allFeeds.forEach(element => {
                 expect(element.name).toBeDefined();
-                expect(element.name).not.toBe(0);
+                expect(element.name.length).not.toBe(0);
             });
         });
     });
@@ -42,7 +42,6 @@ $(function () {
         });
         it('are correctly loaded', function (done) {
             var entries= $('.feed .entry'); 
-            expect(entries).toBeDefined();
             expect(entries.length).toBeGreaterThan(1);
             done();
         });
