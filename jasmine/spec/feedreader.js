@@ -9,7 +9,7 @@ $(function () {
         it('url are not empty', function () {
             allFeeds.forEach(element => {
                 expect(element.url).toBeDefined();
-                expect(element.url).not.toBe(0);
+                expect(element.url.length).not.toBe(0);
             });
         });
         it('name are not empty', function () {
